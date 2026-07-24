@@ -1,0 +1,28 @@
+{
+  "name": "foam",
+  "private": true,
+  "description": "",
+  "version": "1.0.0",
+  "dependencies": {
+    "@mdx-js/mdx": "^1.6.22",
+    "@mdx-js/react": "^1.6.22",
+    "gatsby": "^2.32.13",
+    "gatsby-theme-garden": "^0.1.66",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "webpack-hot-middleware": "^2.26.1"
+  },
+  "overrides": {
+    "sharp": "^0.33.5"
+  },
+  "keywords": [
+    "foam"
+  ],
+  "license": "MIT",
+  "main": "n/a",
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "start": "gatsby serve"
+  }
+}

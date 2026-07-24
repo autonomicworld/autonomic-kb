@@ -1,0 +1,31 @@
+.references-block {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--separator);
+}
+
+.references-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 1.25rem;
+  color: var(--text-muted);
+}
+
+.references-header svg {
+  color: var(--link);
+}
+
+.references-header h3 {
+  font-size: 1.1rem;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  margin: 0;
+  color: var(--text);
+}
+
+.references-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 12px;
+}

@@ -1,0 +1,114 @@
+.searchWrapper {
+  position: relative;
+  width: 280px;
+}
+
+@media screen and (max-width: 640px) {
+  .searchWrapper {
+    width: 180px;
+  }
+}
+
+.inputWrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: var(--main-bg);
+  border: 1px solid var(--separator);
+  border-radius: 10px;
+  padding: 6px 12px;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.inputWrapper:focus-within {
+  border-color: var(--link);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+  background-color: var(--note-bg);
+}
+
+.searchIcon {
+  color: var(--text-muted);
+  flex-shrink: 0;
+  margin-right: 8px;
+}
+
+.inputWrapper input {
+  border: none;
+  background: transparent;
+  outline: none;
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: 0.88rem;
+  width: 100%;
+}
+
+.searchHotkey {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  background: var(--separator);
+  padding: 2px 5px;
+  border-radius: 4px;
+  flex-shrink: 0;
+  letter-spacing: 0.05em;
+}
+
+ul.results {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  right: 0;
+  width: 360px;
+  max-height: 400px;
+  overflow-y: auto;
+  background: var(--note-bg);
+  border: 1px solid var(--separator);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px -5px var(--shadow-lg);
+  padding: 8px;
+  margin: 0;
+  list-style: none;
+  z-index: 100;
+}
+
+@media screen and (max-width: 640px) {
+  ul.results {
+    width: 280px;
+  }
+}
+
+.result-item {
+  padding: 10px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.15s ease;
+  margin-bottom: 2px;
+}
+
+.result-item.highlighted,
+.result-item:hover {
+  background: var(--references-bg);
+}
+
+.result-item .title {
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: var(--text);
+}
+
+.result-item .excerpt {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.no-results {
+  padding: 16px;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}

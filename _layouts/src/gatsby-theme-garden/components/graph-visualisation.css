@@ -1,0 +1,107 @@
+.overlay {
+  z-index: 998;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.modal {
+  z-index: 999;
+  position: fixed;
+  border-radius: 16px;
+  background-color: var(--note-bg);
+  border: 1px solid var(--separator);
+  box-shadow: 0 20px 50px -10px var(--shadow-lg);
+  overflow: hidden;
+}
+
+.modal-close,
+.modal-scale {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid var(--separator);
+  background: var(--main-bg);
+  color: var(--text-muted);
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.modal-close:hover,
+.modal-scale:hover {
+  color: var(--text);
+  border-color: var(--link);
+  background: var(--note-bg);
+}
+
+.modal-close svg,
+.modal-scale svg {
+  width: 16px;
+  height: 16px;
+}
+
+.modal-close path,
+.modal-scale path {
+  fill: currentColor;
+}
+
+.modal-scale {
+  right: 52px;
+}
+
+.modal-minimized .modal-scale svg,
+.modal-minimized .modal-close svg {
+  width: 13px;
+  height: 13px;
+}
+
+.modal-minimized .modal-scale {
+  right: 44px;
+}
+
+.modal-body {
+  height: 100%;
+  width: 100%;
+}
+
+.modal-body .node {
+  cursor: pointer;
+  transition: r 0.2s ease, fill 0.2s ease;
+  stroke: var(--note-bg);
+  stroke-width: 1.5px;
+}
+
+.modal-body .node:hover {
+  stroke: var(--link);
+  stroke-width: 3px;
+}
+
+.modal-body .text {
+  cursor: pointer;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  pointer-events: all;
+  transition: fill 0.2s ease;
+}
+
+.modal-body .link {
+  stroke: var(--separator);
+  stroke-opacity: 0.7;
+}

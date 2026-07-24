@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&family=Fira+Code:wght@400;500&display=swap');
+
+:root {
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-heading: 'Outfit', 'Inter', sans-serif;
+  --font-mono: 'Fira Code', ui-monospace, SFMono-Regular, monospace;
+}
+
+html {
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body.light-mode {
+  --main-bg: #f8fafc;
+  --note-bg: #ffffff;
+  --sidebar-bg: #f1f5f9;
+  --text: #0f172a;
+  --text-muted: #64748b;
+  --separator: #e2e8f0;
+  --shadow: rgba(15, 23, 42, 0.08);
+  --shadow-lg: rgba(15, 23, 42, 0.12);
+  --link: #2563eb;
+  --link-hover: #1d4ed8;
+  --accent: #4f46e5;
+  --accent-light: #e0e7ff;
+  
+  /* References & Cards */
+  --references-bg: #f8fafc;
+  --references-bg-80: rgba(248, 250, 252, 0.85);
+  --references-bg-0: rgba(248, 250, 252, 0);
+  --references-text: #475569;
+  --references-highlight: #334155;
+  --badge-bg: #eff6ff;
+  --badge-text: #1d4ed8;
+  --code-bg: #f1f5f9;
+  --code-text: #0f172a;
+}
+
+body.dark-mode {
+  --main-bg: #090d16;
+  --note-bg: #0f172a;
+  --sidebar-bg: #0b0f19;
+  --text: #f8fafc;
+  --text-muted: #94a3b8;
+  --separator: #1e293b;
+  --shadow: rgba(0, 0, 0, 0.4);
+  --shadow-lg: rgba(0, 0, 0, 0.6);
+  --link: #60a5fa;
+  --link-hover: #93c5fd;
+  --accent: #818cf8;
+  --accent-light: #1e1b4b;
+  
+  /* References & Cards */
+  --references-bg: #111827;
+  --references-bg-80: rgba(17, 24, 39, 0.85);
+  --references-bg-0: rgba(17, 24, 39, 0);
+  --references-text: #94a3b8;
+  --references-highlight: #cbd5e1;
+  --badge-bg: #1e293b;
+  --badge-text: #60a5fa;
+  --code-bg: #1e293b;
+  --code-text: #f8fafc;
+}

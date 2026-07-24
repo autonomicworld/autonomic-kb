@@ -24,30 +24,17 @@ All commands accept `--format json` for machine-readable output, useful for scri
 
 ## Commands
 
-| Command     | Description                                       |
-| ----------- | ------------------------------------------------- |
-| [[daily]]   | Show or create the daily note for a date          |
-| [[grep]]    | Search note content by pattern                    |
-| [[links]]   | Show links to and from a note                     |
-| [[lint]]    | Check notes for issues                            |
-| [[list]]    | List notes, tags, orphans, placeholders, and more |
-| [[mcp]]     | Expose the workspace to AI agents via MCP         |
-| [[note]]    | Show, create, move, or delete notes               |
-| [[outline]] | Show the heading structure of a note              |
-| [[rename]]  | Rename notes, tags, sections, or block anchors    |
-| [[search]]  | Search notes by title, tag, or frontmatter        |
-| [[tag]]     | List, rename, or search tags                      |
-| [[update]]  | Check for a newer version of foam-cli             |
-
-[daily]: cli/daily.md 'foam daily'
-[grep]: cli/grep.md 'foam grep'
-[links]: cli/links.md 'foam links'
-[lint]: cli/lint.md 'foam lint'
-[list]: cli/list.md 'foam list'
-[mcp]: cli/mcp.md 'foam mcp'
-[note]: cli/note.md 'foam note'
-[outline]: cli/outline.md 'foam outline'
-[rename]: cli/rename.md 'foam rename'
-[search]: cli/search.md 'foam search'
-[tag]: cli/tag.md 'foam tag'
-[update]: cli/update.md 'foam update'
+| Command   | Description                                       |
+| --------- | ------------------------------------------------- |
+| [daily]   | Show or create the daily note for a date          |
+| [grep]    | Search note content by pattern                    |
+| [links]   | Show links to and from a note                     |
+| [lint]    | Check notes for issues                            |
+| [list]    | List notes, tags, orphans, placeholders, and more |
+| [mcp]     | Expose the workspace to AI agents via MCP         |
+| [note]    | Show, create, move, or delete notes               |
+| [outline] | Show the heading structure of a note              |
+| [rename]  | Rename notes, tags, sections, or block anchors    |
+| [search]  | Search notes by title, tag, or frontmatter        |
+| [tag]     | List, rename, or search tags                      |
+| [update]  | Check for a newer version of foam-cli             |

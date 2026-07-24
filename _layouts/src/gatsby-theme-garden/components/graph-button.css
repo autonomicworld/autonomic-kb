@@ -1,0 +1,38 @@
+.gitbook-graph-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 10px;
+  border: 1px solid var(--separator);
+  background: var(--main-bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 2px 5px var(--shadow);
+}
+
+.gitbook-graph-btn:hover {
+  border-color: var(--link);
+  color: var(--link);
+  background: var(--note-bg);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px var(--shadow-lg);
+}
+
+.gitbook-graph-btn svg {
+  color: var(--link);
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 640px) {
+  .gitbook-graph-btn .btn-text {
+    display: none;
+  }
+  .gitbook-graph-btn {
+    padding: 8px;
+  }
+}

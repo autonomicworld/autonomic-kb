@@ -1,0 +1,54 @@
+.reference-card-wrapper {
+  display: flex;
+}
+
+.reference-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 14px 16px;
+  background: var(--references-bg);
+  border: 1px solid var(--separator);
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reference-card:hover {
+  border-color: var(--link);
+  box-shadow: 0 4px 16px var(--shadow);
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+.reference-card-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+  color: var(--link);
+}
+
+.reference-card-title {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text);
+  margin: 0;
+}
+
+.reference-card-content {
+  font-size: 0.82rem;
+  color: var(--references-text);
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.reference-card-content p {
+  margin: 0;
+  font-size: 0.82rem;
+  color: var(--references-text);
+}
