@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: `/foam-gatsby-template`,
+  pathPrefix: `/autonomic-kb`,
   siteMetadata: {
     title: `Autonomic Knowledge Base`,
   },
