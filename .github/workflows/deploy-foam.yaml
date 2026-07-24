@@ -3,6 +3,9 @@ name: Deploy Foam website
 on:
   push:
 
+permissions:
+  contents: write
+
 jobs:
   deploy-website:
     runs-on: ubuntu-latest
