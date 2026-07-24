@@ -100,9 +100,29 @@
 
 @media screen and (max-width: 900px) {
   .note-container {
-    padding: 20px;
+    padding: 0;
     width: 100%;
     overflow-y: auto;
+  }
+
+  .note-content {
+    padding: 28px 24px;
+    height: auto;
+    overflow-y: visible;
+  }
+
+  .note-actions-bar {
+    margin-bottom: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .note-content {
+    padding: 18px 14px;
+  }
+
+  .references-grid {
+    grid-template-columns: 1fr;
   }
 }
 
