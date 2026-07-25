@@ -45,6 +45,7 @@ module.exports = {
           "**/.git/**",
           "**/.github/**",
           "**/.vscode/**",
+          "**/foam-docs/**",
         ],
       },
     },
